@@ -1,28 +1,22 @@
-package week1.day2;
+package week3.day2;
 
 public class Browser {
 
 	
-	public void launchBrowser(String browserName) {
-		System.out.println("Step 1: Launch");
-		System.out.println(browserName);
-		
+	String browserName;
+	String browserVersion;
+	
+	public void openURL() {
+		System.out.println("URL opened --> Super class");
 	}
 	
-	public String loadUrl() {
-		System.out.println("Step 2: Load");
-		String strUrl = "Url loaded successfully";
-		return strUrl;
-				
+	public void closeBrowser() {
+		System.out.println("Browser closed --> Super class ");
 	}
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+	public void navigateBack() {
+		System.out.println("Navigated back --> Super class");
 		
-		Browser browser1=new Browser();
-		browser1.launchBrowser("Chrome");
-		browser1.loadUrl();
-
 	}
-
 }
